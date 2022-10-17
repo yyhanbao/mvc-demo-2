@@ -1,5 +1,5 @@
 import "./app1.css";
-import $ from "jQuery";
+import $ from "jquery";
 
 const eventBus = $(window);
 

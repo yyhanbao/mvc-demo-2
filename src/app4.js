@@ -1,5 +1,5 @@
 import "./app4.css";
-import $ from "jQuery";
+import $ from "jquery";
 
 const html = `
   <section id="app4">

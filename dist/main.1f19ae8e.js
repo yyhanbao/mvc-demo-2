@@ -408,7 +408,7 @@ process.chdir = function (dir) {
 process.umask = function () {
   return 0;
 };
-},{}],"../node_modules/jQuery/dist/jquery.js":[function(require,module,exports) {
+},{}],"../node_modules/jquery/dist/jquery.js":[function(require,module,exports) {
 var global = arguments[3];
 var process = require("process");
 var define;
@@ -11021,11 +11021,11 @@ exports.default = void 0;
 
 require("./app1.css");
 
-var _jQuery = _interopRequireDefault(require("jQuery"));
+var _jquery = _interopRequireDefault(require("jquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var eventBus = (0, _jQuery.default)(window); // 数据相关的都放到 m
+var eventBus = (0, _jquery.default)(window); // 数据相关的都放到 m
 
 var m = {
   data: {
@@ -11046,11 +11046,11 @@ var v = {
   el: null,
   html: "\n  <div>\n    <div class=\"output\">\n      <span id=\"number\">{{n}}</span>\n    </div>\n    <div class=\"actions\">\n      <button id=\"add1\">+1</button>\n      <button id=\"minus1\">-1</button>\n      <button id=\"mul2\">*2</button>\n      <button id=\"divide2\">\xF72</button>\n    </div>\n  </div>\n",
   init: function init(container) {
-    v.el = (0, _jQuery.default)(container);
+    v.el = (0, _jquery.default)(container);
   },
   render: function render(n) {
     if (v.el.children.length !== 0) v.el.empty();
-    (0, _jQuery.default)(v.html.replace("{{n}}", n)).appendTo((0, _jQuery.default)(v.el));
+    (0, _jquery.default)(v.html.replace("{{n}}", n)).appendTo((0, _jquery.default)(v.el));
   }
 }; // 其他的都放到 c
 
@@ -11102,7 +11102,7 @@ var c = {
 };
 var _default = c;
 exports.default = _default;
-},{"./app1.css":"app1.css","jQuery":"../node_modules/jQuery/dist/jquery.js"}],"app2.css":[function(require,module,exports) {
+},{"./app1.css":"app1.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app2.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -11117,11 +11117,11 @@ exports.default = void 0;
 
 require("./app2.css");
 
-var _jQuery = _interopRequireDefault(require("jQuery"));
+var _jquery = _interopRequireDefault(require("jquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var eventBus = (0, _jQuery.default)(window);
+var eventBus = (0, _jquery.default)(window);
 var localKey = "app2.index";
 var m = {
   data: {
@@ -11142,11 +11142,11 @@ var v = {
     return "\n    <div>\n      <ol class=\"tab-bar\">\n        <li class=\"".concat(index === 0 ? "selected" : "", "\" data-index=\"0\"><span>1111</span></li>\n        <li class=\"").concat(index === 1 ? "selected" : "", "\" data-index=\"1\"><span>2222</span></li>\n      </ol>\n      <ol class=\"tab-content\">\n        <li class=\"").concat(index === 0 ? "active" : "", "\">\u5185\u5BB91</li>\n        <li class=\"").concat(index === 1 ? "active" : "", "\">\u5185\u5BB92</li>\n      </ol>\n    </div>\n");
   },
   init: function init(container) {
-    v.el = (0, _jQuery.default)(container);
+    v.el = (0, _jquery.default)(container);
   },
   render: function render(index) {
     if (v.el.children.length !== 0) v.el.empty();
-    (0, _jQuery.default)(v.html(index)).appendTo(v.el);
+    (0, _jquery.default)(v.html(index)).appendTo(v.el);
   }
 };
 var c = {
@@ -11180,7 +11180,7 @@ var c = {
 };
 var _default = c;
 exports.default = _default;
-},{"./app2.css":"app2.css","jQuery":"../node_modules/jQuery/dist/jquery.js"}],"app3.css":[function(require,module,exports) {
+},{"./app2.css":"app2.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app3.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -11190,13 +11190,13 @@ module.hot.accept(reloadCSS);
 
 require("./app3.css");
 
-var _jQuery = _interopRequireDefault(require("jQuery"));
+var _jquery = _interopRequireDefault(require("jquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var html = "\n  <section id=\"app3\">\n    <div class=\"square\"></div>\n  </section>\n";
-var $element = (0, _jQuery.default)(html).appendTo((0, _jQuery.default)("body>.page"));
-var $square = (0, _jQuery.default)("#app3 .square");
+var $element = (0, _jquery.default)(html).appendTo((0, _jquery.default)("body>.page"));
+var $square = (0, _jquery.default)("#app3 .square");
 var localKey = "app3.active"; // 三种值：yes no undefined；默认值：undefined
 
 var active = localStorage.getItem(localKey) === "yes";
@@ -11210,7 +11210,7 @@ $square.on("click", function () {
     localStorage.setItem("localKey", "yes");
   }
 });
-},{"./app3.css":"app3.css","jQuery":"../node_modules/jQuery/dist/jquery.js"}],"app4.css":[function(require,module,exports) {
+},{"./app3.css":"app3.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app4.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -11220,19 +11220,19 @@ module.hot.accept(reloadCSS);
 
 require("./app4.css");
 
-var _jQuery = _interopRequireDefault(require("jQuery"));
+var _jquery = _interopRequireDefault(require("jquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var html = "\n  <section id=\"app4\">\n    <div class=\"circle\"></div>\n  </section>\n";
-var $element = (0, _jQuery.default)(html).appendTo((0, _jQuery.default)("body>.page"));
-var $circle = (0, _jQuery.default)("#app4 .circle");
+var $element = (0, _jquery.default)(html).appendTo((0, _jquery.default)("body>.page"));
+var $circle = (0, _jquery.default)("#app4 .circle");
 $circle.on("mouseenter", function () {
   $circle.addClass("active");
 }).on("mouseleave", function () {
   $circle.removeClass("active");
 });
-},{"./app4.css":"app4.css","jQuery":"../node_modules/jQuery/dist/jquery.js"}],"main.js":[function(require,module,exports) {
+},{"./app4.css":"app4.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"main.js":[function(require,module,exports) {
 "use strict";
 
 require("./reset.css");
@@ -11281,7 +11281,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59365" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59585" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
